@@ -1,0 +1,12 @@
+.button1 {
+	-fx-border-color: #ff0000; 
+	-fx-border-width: 5px;
+}
+
+.card {
+  -fx-background-color: white;
+  -fx-background-insets: 8;
+  -fx-background-radius: 8;
+  -fx-effect: dropshadow(three-pass-box, #ccc, 8, 0, 0, 0);
+  -fx-padding: 40;
+}
