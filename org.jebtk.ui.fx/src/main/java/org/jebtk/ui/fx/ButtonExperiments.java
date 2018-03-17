@@ -12,8 +12,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-public class ButtonExperiments extends Application  {
-
+public class ButtonExperiments extends Application {
 
   @Override
   public void start(Stage primaryStage) throws Exception {
@@ -21,30 +20,28 @@ public class ButtonExperiments extends Application  {
 
     createSwingContent(swingNode);
 
-
     primaryStage.setTitle("Button Experiment 1");
 
-    Button button1 = new Button("Button 1");
+    // Button button1 = new Button("Button 1");
     Button button2 = new HmmButton("Button 2");
-    Button button3 = new Button("Button 3");
-    Button button4 = new Button("Button 4");
+    // Button button3 = new Button("Button 3");
+    // Button button4 = new Button("Button 4");
 
-    button1.getStyleClass().add("button1");
-    //button2.setStyle("-fx-background-color: #00ff00");
-    button3.setStyle("-fx-font-size: 2em; ");
-    button4.setStyle("-fx-text-fill: #0000ff");
+    // .getStyleClass().add("button1");
+    // button2.setStyle("-fx-background-color: #00ff00");
+    // button3.setStyle("-fx-font-size: 2em; ");
+    // button4.setStyle("-fx-text-fill: #0000ff");
 
-
-    HBox hbox = new HBox(button1, button2, button3, button4);
-
+    //HBox hbox = new HBox(button2);
 
     BorderPane borderPane = new Card();
 
     borderPane.setLeft(swingNode);
-    borderPane.setRight(hbox);
+    borderPane.setRight(button2);
 
     Scene scene = new Scene(borderPane, 400, 400);
-    String css = getClass().getClassLoader().getResource("css/style.css").toExternalForm();
+    String css = getClass().getClassLoader().getResource("css/style.css")
+        .toExternalForm();
     scene.getStylesheets().clear();
     scene.getStylesheets().add(css);
     primaryStage.setScene(scene);
