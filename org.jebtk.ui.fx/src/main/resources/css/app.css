@@ -1,6 +1,6 @@
-.button1 {
-	-fx-border-color: #ff0000; 
-	-fx-border-width: 5px;
+.root {
+    -fx-font-size: 9pt;
+    -fx-font-family: 'Roboto';    
 }
 
 .button {
@@ -9,15 +9,17 @@
   -fx-border-radius: 4px;
   -fx-border-width: 1px;
   -fx-border-color: #ff0000;
-  -fx-border-insets: 0px;
-  -fx-border-style: inside;
-  -fx-pref-height: 100px;
-  -fx-pref-width: 200px;
+  -fx-pref-width: 80px;
+  -fx-pref-height: 28px;
   -fx-background-insets: 0;
 }
 
 .button:armed, .button:focused {
-    -fx-background-insets: 0;
+  -fx-background-insets: 0;
+}
+
+.primary-dialog-button {
+  
 }
 
 .card {

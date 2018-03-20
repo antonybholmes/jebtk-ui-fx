@@ -30,7 +30,7 @@
               <transformers>
                 <transformer
                   implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>org.jebtk.ui.fx.ButtonExperiments</mainClass>
+                  <mainClass>org.jebtk.ui.fx.FxApplication</mainClass>
                 </transformer>
               </transformers>
             </configuration>
